@@ -1,4 +1,5 @@
-﻿if (-not (get-module HPOneView.400))
+﻿# Unassign the ServerProfile and delete the server profile, if the migration from one network to another network failed. 
+if (-not (get-module HPOneView.400))
 {
 	import-Module HPOneView.400
 }
